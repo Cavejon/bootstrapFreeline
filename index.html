@@ -14,12 +14,13 @@
 </head>
 
 <body>
-
+    <!--Criando a navBar superior com o dropDown diretamente feito pelo bootstrap-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+        <!--Button oculto para visualização do mobile-->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
             Menu
         </button>
+        <!--Container para alocar as opções da navBar-->
         <div class="container">
             <a href="#" class="navbar-brand">Better</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,6 +29,7 @@
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropDownMenuLink" data-toggle="dropdown">
                         Descubra
                     </a>
+                    <!--Começo da lista do dropDown-->
                     <ul class="dropdown-menu">
                         <!--itens do submenu-->
                         <li> <a href="" class="dropdown-item">Paisagem</a></li>
@@ -49,16 +51,23 @@
             </div>
         </div>
     </nav>
-
+    <!-- Main terá como função principal todao o restante da página que
+    será separado por sections, cada parte do código alocará imagens,textos e inputs-->
     <main>
+
+        <!--Section para o Grid das imagens
+        Class="Jumbotron" o que é?
+        Extender o objeto para a tela inteira-->
         <section class="jumbotron">
+            <!--A class container ficará responder por centralizar um contrainer de informações-->
             <div class="container">
                 <h1>Momentos perfeitos</h1>
                 <p>Mais de um 17 yottabytes de fotos</p>
-
+                <!--Input-group tem como função estilizar o input-->
                 <form class="input-group">
                     <input type="search" class="form-control" placeholder="Encontre o que você procura...">
                     <span class="input-group-btn">
+                        <!--as classes BTN englobam cores e estilizações como border-radius -->
                         <button class="btn btn-primary">Pesquisar</button>
                     </span>
                 </form>
@@ -66,17 +75,22 @@
         </section>
 
         <section class="container">
+            <!--A class container ficará responder por centralizar um contrainer de informações-->
             <h2 class="text-center">
                 Imagens bonitas, lindas e perfeitas
             </h2>
             <p class="text-center">
                 Lorem ipsum dolor emet aset
             </p>
+            <!--A class row ficará responsável por criar uma grid com linhas e colunas-->
             <div class="row">
+                <!--Col se refere a linha SM se refere ao tamanho -->
                 <a href="#" class="col-sm-6	col-md-4	col-lg-3">
                     <figure>
                         <img src="./imgs/girassois.jpg" alt="Girassóis no campo" class="img-fluid img-thumbnail">
+                        <!--Img fluid e img-thumbnail se usam quando necessitamos deixar um layout responsivo para celulares-->
                     </figure>
+                    <!--Figcaption é a legenda da foto-->
                     <figcaption class="text-center">
                         Girassóis
                     </figcaption>
@@ -147,9 +161,9 @@
                 </a>
             </div>
         </section>
-        <br><br><br><br><br>
 
-        <section class="hall bg-dark text-light pt-4">
+        <!--Nessa section usamos bg-dark que se refere ao background, já o text serve para a cor da font e pt se refere ao paddind Top-->
+        <section class="hall bg-dark text-light pt-5">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6">
@@ -178,10 +192,76 @@
                 </div>
             </div>
         </section>
-    </main>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
 
+        <section class="reviews container pt-5">
+
+            <h1 class="mb-3">Reviews</h1>
+
+            <div class="row">
+                <div class="media col-md-6">
+                    <img src="https://dummyimage.com/64x64/000000/fff" alt="Roberto Ford" class="mr-3">
+                    <div class="media-body">
+                        <h2 class="h5">Roberto Ford</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt ipsum repudiandae
+                            perspiciatis
+                            fugit
+                            recusandae eaque non distinctio reprehenderit illum? Autem itaque, consequuntur laboriosam
+                            ab
+                            dolorem
+                            repellendus eius sapiente. Cupiditate.</p>
+                    </div>
+                </div>
+
+                <div class="media col-md-6">
+                    <img src="https://dummyimage.com/64x64/000000/fff" alt="Bernado Love" class="mr-3">
+                    <div class="media-body">
+                        <h2 class="h5">Bernado Love</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt ipsum repudiandae
+                            perspiciatis
+                            fugit
+                            recusandae eaque non distinctio reprehenderit illum? Autem itaque, consequuntur laboriosam
+                            ab
+                            dolorem
+                            repellendus eius sapiente. Cupiditate.</p>
+                    </div>
+                </div>
+
+                <div class="media col-md-6">
+                    <img src="https://dummyimage.com/64x64/000000/fff" alt="Arnold Veber" class="mr-3">
+                    <div class="media-body">
+                        <h2 class="h5">Arnold Veber</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt ipsum repudiandae
+                            perspiciatis
+                            fugit
+                            recusandae eaque non distinctio reprehenderit illum? Autem itaque, consequuntur laboriosam
+                            ab
+                            dolorem
+                            repellendus eius sapiente. Cupiditate.</p>
+                    </div>
+                </div>
+
+                <div class="media col-md-6">
+                    <img src="https://dummyimage.com/64x64/000000/fff" alt="Antônio Hopinz" class="mr-3">
+                    <div class="media-body">
+                        <h2 class="h5">Antônio Hopinz</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt ipsum repudiandae
+                            perspiciatis
+                            fugit
+                            recusandae eaque non distinctio reprehenderit illum? Autem itaque, consequuntur laboriosam
+                            ab
+                            dolorem
+                            repellendus eius sapiente. Cupiditate.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 
